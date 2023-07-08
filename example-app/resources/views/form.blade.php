@@ -13,7 +13,8 @@
   <body>
 
   <div class="container">
-    <form>
+    <form  method="post" action="{{url('store')}}">
+        @csrf
         <div class="form-group">
           <label for="name">Name</label>
           <input type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Name">
